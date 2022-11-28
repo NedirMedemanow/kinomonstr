@@ -1,0 +1,434 @@
+/**  Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 100%;
+  font-family: "Lora", serif;
+  line-height: 1.4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1.2rem;
+  letter-spacing: 0.9px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid #a2a2a2;
+  border-radius: 5px;
+}
+hr {
+  border: 1px solid #d2d2d29a;
+  border-radius: 5px;
+  clear: both;
+  margin-bottom: 1.5rem;
+}
+table {
+  width: 100%;
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid #dfdfdf;
+}
+tr,
+td,
+th {
+  padding: 1rem;
+  font-size: 1.3rem;
+  vertical-align: center;
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+/**  Containers **/
+section {
+  margin-bottom: 1.5rem;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.grid,
+.inner-grid {
+  display: grid;
+  gap: 1rem;
+}
+.container .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background {
+  background-color: #081302;
+}
+.gray {
+  background-color: #f1f1f1;
+}
+.grayyellow {
+  color: #aeb002;
+}
+.darkblue {
+  color: #252049;
+  opacity: 0.5;
+}
+.blue {
+  color: #118cc5;
+}
+/*? headings  */
+.logo,
+.logo a {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.2rem;
+}
+.subheader {
+  color: #a2a2a2;
+  font-size: 0.8rem;
+}
+.heading {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+/** links  **/
+.links {
+  color: #aeb002;
+  font-size: 1rem;
+}
+.links:hover {
+  color: #483d8b;
+}
+.header .links {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.header .links:hover {
+  color: yellow;
+}
+.header .links.selected {
+  color: #aeb002;
+}
+.post .links,
+.post .links:hover {
+  font-size: 1.5rem;
+  color: #aeb002;
+}
+.github-link {
+  padding-right: 1rem;
+}
+.github-link:hover {
+  color: #fff;
+}
+.footer .links {
+  color: #a2a2a2;
+}
+.footer .links:hover {
+  color: #aeb002;
+}
+/** buttons **/
+.submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+}
+.submit:hover,
+.submit:active {
+  opacity: 0.9;
+}
+.btn {
+  all: initial;
+  display: block;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #081302;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background-color: #081302a2;
+}
+/**  header section **/
+.header .nav {
+  display: none;
+}
+.header .show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #081302;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header .close-link {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-family: sans-serif;
+}
+
+/** aside section **/
+.aside {
+  display: none;
+}
+
+/** footer section  **/
+.footer p {
+  color: #a2a2a2;
+  align-self: flex-end;
+}
+.footer .nav {
+  display: none;
+}
+.footer .github-link {
+  display: none;
+}
+
+/**  index main page **/
+.inner-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.post {
+  margin-top: 1rem;
+}
+
+/** films and serials page **/
+.info {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.info .heading {
+  font-size: 1.5rem;
+}
+.info img {
+  width: 40%;
+  max-height: 280px;
+  margin-top: 5px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+  float: left;
+}
+/**  rating page **/
+.table .links {
+  font-size: 1.3rem;
+}
+
+/**  contacts page **/
+.contacts p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.contacts .input {
+  border: 1px solid #d2d2d2;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/** parts page **/
+.part {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.part .name {
+  text-transform: capitalize;
+}
+.part .value {
+  margin-right: 0.5rem;
+  color: #aeb002;
+}
+.description .heading {
+  font-size: 2rem;
+}
+.description .info {
+  padding-left: 0;
+}
+.description .input {
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.comment {
+  margin-bottom: 1.5rem;
+}
+.comment-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .container .flex {
+    flex-direction: column;
+  }
+  .container .grid {
+    grid-template-columns: 8fr 4fr;
+  }
+  /** header **/
+  .header .brand {
+    align-self: flex-start;
+  }
+  .header .menubar {
+    display: none;
+  }
+  .header .nav {
+    display: block;
+    margin-top: 1.5rem;
+  }
+  .header .nav-list {
+    display: flex;
+  }
+  .header .close-link {
+    display: none;
+  }
+  .header .links {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding-left: 3rem;
+  }
+
+  /** aside section  **/
+  .aside {
+    display: block;
+  }
+  .index {
+    padding-top: 3.4rem;
+  }
+  .sidebar {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .sidebar .input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .sidebar .heading {
+    font-size: 2rem;
+  }
+  .sidebar .login {
+    margin-top: 1rem;
+  }
+  .sidebar .news {
+    margin: 1rem 0;
+    opacity: 0.9;
+  }
+  .rating li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rating .links {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .rating .rate {
+    font-size: 1rem;
+  }
+
+  /** footer **/
+  .footer .brand {
+    display: none;
+  }
+  .footer p {
+    align-self: center;
+  }
+  .footer .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  .footer .github-link {
+    display: inline-block;
+  }
+
+  /**  index page **/
+  .main p {
+    font-size: 1rem;
+  }
+
+  /** films and serials page **/
+  .info img {
+    width: 30%;
+    max-height: 200px;
+  }
+
+  /** rating page **/
+  .table img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /**  contacts page **/
+  .contacts {
+    width: 90%;
+  }
+
+  /** parts page **/
+  iframe {
+    width: 90%;
+  }
+  .part {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .inner-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .sidebar {
+    width: 80%;
+  }
+}
