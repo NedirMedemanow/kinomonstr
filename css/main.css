@@ -68,9 +68,8 @@ th {
 tr,
 td,
 th {
-  padding: 1rem;
-  font-size: 1.3rem;
-  vertical-align: center;
+  padding: 0.2em;
+  font-size: 0.8rem;
   text-align: center;
 }
 iframe {
@@ -229,9 +228,13 @@ section {
 }
 
 /** footer section  **/
+.footer .flex {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .footer p {
   color: #a2a2a2;
-  align-self: flex-end;
 }
 .footer .nav {
   display: none;
@@ -265,8 +268,11 @@ section {
   float: left;
 }
 /**  rating page **/
+.rate-section .heading {
+  width: max-content;
+}
 .table .links {
-  font-size: 1.3rem;
+  font-size: 0.8rem;
 }
 
 /**  contacts page **/
@@ -310,7 +316,13 @@ section {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 767px) {
+  tr,
+  th,
+  td {
+    font-size: 1.3rem;
+  }
   .container .flex {
     flex-direction: column;
   }
@@ -379,6 +391,7 @@ section {
   }
 
   /** footer **/
+
   .footer .brand {
     display: none;
   }
@@ -387,6 +400,7 @@ section {
   }
   .footer .nav {
     display: flex;
+    align-self: center;
     gap: 1rem;
   }
   .footer .github-link {
@@ -408,6 +422,9 @@ section {
   .table img {
     width: 70%;
     margin: 0 auto;
+  }
+  .table .links {
+    font-size: 1.3rem;
   }
 
   /**  contacts page **/
